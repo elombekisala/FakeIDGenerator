@@ -12,6 +12,8 @@
 		BFD02C431DC4EEFC00D3090C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD02C411DC4EEFC00D3090C /* Main.storyboard */; };
 		BFD02C451DC4EEFC00D3090C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD02C441DC4EEFC00D3090C /* Assets.xcassets */; };
 		BFD02C481DC4EEFC00D3090C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD02C461DC4EEFC00D3090C /* LaunchScreen.storyboard */; };
+		BFD02C501DC4EFC800D3090C /* MaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD02C4F1DC4EFC800D3090C /* MaleViewController.swift */; };
+		BFD02C521DC4EFDA00D3090C /* FemaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD02C511DC4EFDA00D3090C /* FemaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BFD02C441DC4EEFC00D3090C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD02C471DC4EEFC00D3090C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD02C491DC4EEFC00D3090C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD02C4F1DC4EFC800D3090C /* MaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleViewController.swift; sourceTree = "<group>"; };
+		BFD02C511DC4EFDA00D3090C /* FemaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				BFD02C3D1DC4EEFC00D3090C /* AppDelegate.swift */,
 				BFD02C3F1DC4EEFC00D3090C /* ViewController.swift */,
+				BFD02C4F1DC4EFC800D3090C /* MaleViewController.swift */,
+				BFD02C511DC4EFDA00D3090C /* FemaleViewController.swift */,
 				BFD02C411DC4EEFC00D3090C /* Main.storyboard */,
 				BFD02C441DC4EEFC00D3090C /* Assets.xcassets */,
 				BFD02C461DC4EEFC00D3090C /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD02C501DC4EFC800D3090C /* MaleViewController.swift in Sources */,
 				BFD02C401DC4EEFC00D3090C /* ViewController.swift in Sources */,
+				BFD02C521DC4EFDA00D3090C /* FemaleViewController.swift in Sources */,
 				BFD02C3E1DC4EEFC00D3090C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,11 +268,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PFEPFYUD7S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FakeIDFull/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveLombs.FakeIDFull;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,11 +283,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PFEPFYUD7S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FakeIDFull/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveLombs.FakeIDFull;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -300,6 +312,7 @@
 				BFD02C4E1DC4EEFC00D3090C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
